@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleurine - Link in Bio</title>
+    <!-- Import Font dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Background pink lembut */
+            background-color: #ffdce5;
+            background-image: radial-gradient(circle at top right, #ffe8ef, #ffdce5);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .bio-container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        /* --- Bagian Profil --- */
+        .profile-img-wrapper {
+            position: relative;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 15px;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffffff; 
+            box-shadow: 0 4px 15px rgba(200, 100, 130, 0.2);
+        }
+
+        .location {
+            font-size: 11px;
+            font-weight: 700;
+            color: #c44d71; 
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #b03a5f;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            font-size: 14px;
+            color: #8c5b68;
+            margin-bottom: 35px;
+        }
+
+        /* --- Bagian Tombol --- */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: white;
+            padding: 18px 24px;
+            border-radius: 50px; 
+            font-weight: 600;
+            font-size: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .btn-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-pink {
+            background-color: #d64a78; 
+        }
+
+        .btn-green {
+            background-color: #25d366; 
+        }
+
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .btn-tiktok {
+            background-color: #111111;
+        }
+
+        /* Area Ikon */
+        .btn-icon-left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            padding: 4px;
+        }
+
+        .btn-text {
+            flex-grow: 1;
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        .btn-icon-right {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bio-container">
+        <!-- Foto Profil -->
+        <div class="profile-img-wrapper">
+            <img src="logo.jpeg" alt="Logo Fleurine" class="profile-img">
+        </div>
+
+        <!-- Teks Informasi -->
+        <div class="location">PURWOKERTO - INDONESIA</div>
+        <h1>Fleurine</h1>
+        <p class="subtitle">Ruang kecil penuh bunga, cerita, dan hal-hal indah.</p>
+
+        <!-- Kumpulan Tombol -->
+        <div class="links-container">
+            
+            <!-- Tombol 1: Beli Online (Pink) -->
+            <a href="https://fleurine-id.github.io/flourine/" class="btn-link btn-pink" target="_blank" rel="noopener noreferrer">
+                <div class="btn-icon-left">🛒</div>
+                <div class="btn-text">Beli Online</div>
+                <div class="btn-icon-right">&#x2197;</div> 
+            </a>
+
+            <!-- Tombol 2: Instagram -->
+            <a href="https://www.instagram.com/fleurinepwt?igsi=dTA1MHRiZG8zMjVx" class="btn-link btn-instagram" target="_blank" rel="noopener noreferrer">
+                <div class="btn-icon-left">📸</div>
+                <div class="btn-text">Instagram @fleurinepwt</div>
+                <div class="btn-icon-right">&#x2197;</div> 
+            </a>
+
+            <!-- Tombol 3: TikTok -->
+            <a href="https://www.tiktok.com/@fleurinepwt?_r=1&_t=ZS-99Z9nKoYJ1w" class="btn-link btn-tiktok" target="_blank" rel="noopener noreferrer">
+                <div class="btn-icon-left">🎵</div>
+                <div class="btn-text">TikTok @fleurinepwt</div>
+                <div class="btn-icon-right">&#x2197;</div> 
+            </a>
+
+            <!-- Tombol 4: WhatsApp Admin 1 -->
+            <a href="https://wa.me/6285868060451" class="btn-link btn-green" target="_blank" rel="noopener noreferrer">
+                <div class="btn-icon-left">💬</div>
+                <div class="btn-text">WhatsApp Admin 1</div>
+                <div class="btn-icon-right">&#x2197;</div> 
+            </a>
+
+            <!-- Tombol 5: WhatsApp Admin 2 -->
+            <a href="https://wa.me/6285877307648" class="btn-link btn-green" target="_blank" rel="noopener noreferrer">
+                <div class="btn-icon-left">💬</div>
+                <div class="btn-text">WhatsApp Admin 2</div>
+                <div class="btn-icon-right">&#x2197;</div> 
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
